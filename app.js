@@ -13,7 +13,7 @@ app.get('/about', function(req, res){
 })
 
 app.get('/roster', function(req, res){
-  res.send('this is the roster page');
+  res.sendfile(__dirname +'/views/roster.html')
 })
 
 app.get('/contact', function(req, res){
